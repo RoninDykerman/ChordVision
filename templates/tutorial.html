@@ -2,32 +2,10 @@
 
 {% block content %}
 
-<style>
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-        color: black;
-        background-color: #F5F0E6;
-        padding: 10px;
-        gap: 10px;
-        max-width: 20vw;
-        height: 90vh;
-    }
-
-    .image-container {
-        width: auto;
-        height: 80%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: 10px 0;
-    }
-
-</style>
-
-<div class="flex-container">
-
-    <div style="text-align: center; justify-content: center; align-items: center; font-size: 10vh;">Tutorial</div>
+<div class="title-container">Tutorial</div>
+<div class="image-background">
     <div class="image-container" style="background-image: url('static/Media/songTutorial.png')"></div>
+</div>
+
 
 {% endblock %}

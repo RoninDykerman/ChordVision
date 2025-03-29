@@ -107,6 +107,25 @@ body {
     min-height: 20vh;
 }
 
+.image-background {
+    display: flex;
+    height: 75vh;
+    width: 75vw;
+    background-color: #F5F0E6;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.image-container {
+    width: 75%;
+    height: 75%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @media (max-width: 800px) {
     .flex-container {
         flex-direction: column;
