@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<style>
+    .custom-table {
+        font-size: 6vw;
+        width: 100%;
+        border: 5px solid black;
+        border-collapse: collapse;
+        font-family: sans-serif;
+    }
+
+    th {
+        background-color: #1A5F7A;
+        color: #FFFFFF;
+        padding: 12px;
+        text-align: left;
+        border: 3px solid black;
+        border-bottom: 5px solid black;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #FFF8F0;
+        color: #0A2463;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #E6F0F9;
+        color: #0A2463;
+    }
+
+    
+    td {
+        padding: 10px;
+        text-align: left;
+        border: 3px solid black;
+        border-bottom: 5px solid black;
+    }
+
+</style>
+
+<div class="button-container">
+    <div onclick="window.location.href='{{ url_for("hotel_california") }}';" style="cursor: pointer;">Hotel California</div>
+    <div onclick="window.location.href = '{{ url_for("thatll_be_the_day") }}';" style="cursor: pointer;">That'll Be The Day</div>
+    <div onclick="window.location.href = '{{ url_for("la_bamba") }}';" style="cursor: pointer;">La Bamba</div>
+    <div onclick="window.location.href='{{ url_for("let_it_be") }}';" style="cursor: pointer;">Let It Be</div>
+    <div onclick="window.location.href = '{{ url_for("take_it_easy") }}';" style="cursor: pointer;">Take It Easy</div>
+    <div onclick="window.location.href = '{{ url_for("come_on_lets_go") }}';" style="cursor: pointer;">Come On Let's Go</div>
+</div>
+
+
+{% endblock %}

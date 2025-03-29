@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="button-container" style="font-size: 6vh;">
+    <div onclick="window.location.href='{{ url_for("library") }}';" style="cursor: pointer;">Song Library</div>
+    <div onclick="window.location.href = '{{ url_for("tutorial") }}';" style="cursor: pointer;">Tutorial</div>
+    <div onclick="window.location.href = '{{ url_for("legend") }}';" style="cursor: pointer;">Legend</div>
+</div>
+
+{% endblock %}
