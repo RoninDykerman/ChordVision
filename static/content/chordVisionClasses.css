@@ -141,6 +141,9 @@ body {
     .stack-container > div{
         font-size: 6vh;
     }
+    .image-background{
+        height: 50vh;
+    }
     
 }
 
